@@ -1,0 +1,217 @@
+$primary: #3292a6;
+$primary-overlay:rgba(50, 146, 166, 0.6);
+
+body{
+	margin-top:105px;
+}
+
+.navbar{
+	box-shadow:2px 2px 5px $primary;
+	opacity:0.9;
+	background:#fff;
+
+
+	.nav-item{
+	font-size:1.4rem;
+	padding-right:20px;
+	}
+}
+
+
+
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+  .caption {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: fade-out($gray-900, 0.8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    .caption-content {
+      color: $white;
+      margin: auto 2rem 2rem;
+      h2 {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+      }
+      p {
+        font-weight: 300;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  @media(min-width: 992px) {
+    max-width: none;
+    margin: 0;
+    .caption {
+      -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+      -webkit-clip-path: inset(0px);
+      clip-path: inset(0px);
+      .caption-content {
+        transition: opacity 0.25s;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-bottom: 5rem;
+      }
+    }
+    img {
+      -webkit-transition: -webkit-clip-path 0.25s ease-out;
+      -webkit-clip-path: inset(-1px);
+      clip-path: inset(-1px);
+    }
+    &:hover {
+      img {
+        -webkit-clip-path: inset(2rem);
+        clip-path: inset(2rem);
+      }
+      .caption {
+        background-color: fade-out($primary, 0.1);
+        -webkit-clip-path: inset(2rem);
+        clip-path: inset(2rem);
+      }
+    }
+  }
+}
+
+
+#team{
+	img{
+	width:100%;
+	height:100%;
+	}
+
+	.fa{
+	font-size:2em;
+	}
+	}	
+}
+
+#showcase {
+	position:relative;
+	min-height:200px;
+	background:url('../img/lights.jpg');
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	text-align:center;
+	color:#fff;
+}
+
+.info-header{
+	width:50%;
+	margin:auto;
+	border-bottom:1px #ddd solid;
+}
+
+#authors{
+	img{
+	margin-top:-50px;
+	}
+
+	.fa{
+	font-size:25px;
+	color:#fff;
+	}
+
+	.card:hover{
+	background:$primary;
+	color:#fff;
+	}
+}
+
+.partners {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  .partners-item {
+    max-width: 18rem;
+    img {
+      max-width: 12rem;
+      box-shadow: 0px 5px 5px 0px $gray-500;
+    }
+  }
+}
+
+// Styling for the contact section
+section#contact {
+  background-color: $gray-900;
+  background-image: url('../img/map-image.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  .section-heading {
+    color: $white;
+  }
+  .form-group {
+    margin-bottom: 25px;
+    input,
+    textarea {
+      padding: 20px;
+    }
+    input.form-control {
+      height: auto;
+    }
+    textarea.form-control {
+      height: 248px;
+    }
+  }
+  .form-control:focus {
+    border-color: $primary;
+    box-shadow: none;
+  }
+  ::-webkit-input-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    @include heading-font;
+  }
+  :-moz-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    /* Firefox 18- */
+    @include heading-font;
+  }
+  ::-moz-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    /* Firefox 19+ */
+    @include heading-font;
+  }
+  :-ms-input-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    @include heading-font;
+  }
+}
+
+
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: $secondary;
+  color: $white;
+}
+
+.copyright {
+  background-color: darken($secondary, 10%);
+}
+
+
+
+@media(max-width:576px){
+	nav .container{
+	width:100%;
+	}
+}
+
+@media(min-width:991px){
+	.name{
+	.fa{
+	font-size:25px;
+	}
+	}
+}
+

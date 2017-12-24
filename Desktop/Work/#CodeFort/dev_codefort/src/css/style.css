@@ -1,0 +1,157 @@
+body {
+  margin-top: 105px; }
+
+.navbar {
+  box-shadow: 2px 2px 5px #3292a6;
+  opacity: 0.9;
+  background: #fff; }
+  .navbar .nav-item {
+    font-size: 1.4rem;
+    padding-right: 20px; }
+
+
+#showcase {
+  position: relative;
+  min-height: 200px;
+  background: url("../img/lights.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff; }
+
+.info-header {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px #ddd solid; }
+
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem; }
+  .portfolio-item .caption {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1; }
+    .portfolio-item .caption .caption-content {
+      color: #fff;
+      margin: auto 2rem 2rem; }
+      .portfolio-item .caption .caption-content h2 {
+        font-size: 0.8rem;
+        text-transform: uppercase; }
+      .portfolio-item .caption .caption-content p {
+        font-weight: 300;
+        font-size: 1.2rem; }
+  @media (min-width: 992px) {
+    .portfolio-item {
+      max-width: none;
+      margin: 0; }
+      .portfolio-item .caption {
+        -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+        -webkit-clip-path: inset(0px);
+        clip-path: inset(0px); }
+        .portfolio-item .caption .caption-content {
+          transition: opacity 0.25s;
+          margin-left: 5rem;
+          margin-right: 5rem;
+          margin-bottom: 5rem; }
+      .portfolio-item img {
+        -webkit-transition: -webkit-clip-path 0.25s ease-out;
+        -webkit-clip-path: inset(-1px);
+        clip-path: inset(-1px); }
+      .portfolio-item:hover img {
+        -webkit-clip-path: inset(2rem);
+        clip-path: inset(2rem); }
+      .portfolio-item:hover .caption {
+        background-color: rgba(29, 128, 159, 0.9);
+        -webkit-clip-path: inset(2rem);
+        clip-path: inset(2rem); } }
+
+
+
+#team img {
+  width: 100%;
+  height: 100%; }
+
+#team .port-item {
+  width: 30%; }
+  #team .port-item .fa {
+    font-size: 2em; }
+
+.partners {
+  padding-top: 7rem;
+  padding-bottom: 7rem; }
+  .partners .partners-item {
+    max-width: 18rem; }
+    .partners .partners-item img {
+      max-width: 12rem;
+      box-shadow: 0px 5px 5px 0px #adb5bd; }
+
+section#contact {
+  background-color: #212529;
+  background-image: url("../img/map-image.png");
+  background-repeat: no-repeat;
+  background-position: center; }
+  section#contact .section-heading {
+    color: #fff; }
+  section#contact .form-group {
+    margin-bottom: 25px; }
+    section#contact .form-group input,
+    section#contact .form-group textarea {
+      padding: 20px; }
+    section#contact .form-group input.form-control {
+      height: auto; }
+    section#contact .form-group textarea.form-control {
+      height: 248px; }
+  section#contact .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none; }
+  section#contact ::-webkit-input-placeholder {
+    font-weight: 700;
+    color: #ced4da;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  section#contact :-moz-placeholder {
+    font-weight: 700;
+    color: #ced4da;
+    /* Firefox 18- */
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  section#contact ::-moz-placeholder {
+    font-weight: 700;
+    color: #ced4da;
+    /* Firefox 19+ */
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  section#contact :-ms-input-placeholder {
+    font-weight: 700;
+    color: #ced4da;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #2C3E50;
+  color: #fff; }
+
+.copyright {
+  background-color: #1a252f; }
+
+
+@media (max-width: 576px) {
+  nav .container {
+    width: 100%; } }
+
+@media (min-width: 1199px) {
+  .port-item {
+    padding: 3em !important; } }
+
+@media (min-width: 991px) {
+  .name .fa {
+    font-size: 25px; } }
+
+
+
