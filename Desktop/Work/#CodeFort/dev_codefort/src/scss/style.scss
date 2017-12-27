@@ -29,13 +29,13 @@ body{
     display: flex;
     height: 100%;
     width: 100%;
-    background-color: fade-out($gray-900, 0.8);
+    background-color: fade-out;
     position: absolute;
     top: 0;
     bottom: 0;
     z-index: 1;
     .caption-content {
-      color: $white;
+      color: #fff;
       margin: auto 2rem 2rem;
       h2 {
         font-size: 0.8rem;
@@ -90,8 +90,7 @@ body{
 	.fa{
 	font-size:2em;
 	}
-	}	
-}
+}	
 
 #showcase {
 	position:relative;
@@ -132,19 +131,19 @@ body{
     max-width: 18rem;
     img {
       max-width: 12rem;
-      box-shadow: 0px 5px 5px 0px $gray-500;
+      box-shadow: 0px 5px 5px 0px #808080;
     }
   }
 }
 
 // Styling for the contact section
 section#contact {
-  background-color: $gray-900;
+  background-color: #808080;
   background-image: url('../img/map-image.png');
   background-repeat: no-repeat;
   background-position: center;
   .section-heading {
-    color: $white;
+    
   }
   .form-group {
     margin-bottom: 25px;
@@ -163,40 +162,17 @@ section#contact {
     border-color: $primary;
     box-shadow: none;
   }
-  ::-webkit-input-placeholder {
-    font-weight: 700;
-    color: $gray-400;
-    @include heading-font;
-  }
-  :-moz-placeholder {
-    font-weight: 700;
-    color: $gray-400;
-    /* Firefox 18- */
-    @include heading-font;
-  }
-  ::-moz-placeholder {
-    font-weight: 700;
-    color: $gray-400;
-    /* Firefox 19+ */
-    @include heading-font;
-  }
-  :-ms-input-placeholder {
-    font-weight: 700;
-    color: $gray-400;
-    @include heading-font;
-  }
-}
+ }
 
 
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: $secondary;
-  color: $white;
+  
+  
 }
 
 .copyright {
-  background-color: darken($secondary, 10%);
 }
 
 
